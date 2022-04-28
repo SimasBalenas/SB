@@ -59,8 +59,10 @@
     <Compile Include="demoqa.cs" />
     <Compile Include="NamuDarbai.cs" />
     <Compile Include="ndtreciadienis.cs" />
+    <Compile Include="page\demoqaTextBoxPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="testAttribute.cs" />
+    <Compile Include="Test\DemoqaTextBoxTest.cs" />
     <Compile Include="treciadienis.cs" />
     <Compile Include="UrlPvz.cs" />
   </ItemGroup>
