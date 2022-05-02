@@ -52,6 +52,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2022_04_30\demoqaCheckBoxPage.cs" />
+    <Compile Include="2022_04_30\demoqaCheckBoxTest.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
     <Compile Include="Class3.cs" />
@@ -65,6 +67,7 @@
     <Compile Include="Test\DemoqaTextBoxTest.cs" />
     <Compile Include="treciadienis.cs" />
     <Compile Include="UrlPvz.cs" />
+    <Compile Include="_driver\Manage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ND2022.04.27" />

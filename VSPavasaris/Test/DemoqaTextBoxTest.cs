@@ -13,27 +13,29 @@ namespace VSPavasaris.Test
 {
     class DemoqaTextBoxTest
     {
-        
         private static IWebDriver _driver;
-        [OneTimeSetUp]
 
-        public void OneTimeSetup()
+        [OneTimeSetUp]
+        public static void OneTimeSetUp()
         {
             _driver = new ChromeDriver();
-            _driver.Manage().Window.Maximize();
             _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            _driver.Url = "https://testpages.herokuapp.com/styled/calculator";
+            _driver.Manage().Window.Maximize();
         }
+
         [OneTimeTearDown]
-        public void OneTimeTearDown()
+        public static void OneTimeTearDown()
         {
-            _driver.Quit();
+           _driver.Quit();
         }
+
         [Test]
-        public void InsertTextToFullNameField()
+        public static void TestFullNameInputField()
         {
             string fullName = "Simas";
+
             DemoqaTextBoxPage demoqaTextBoxPage = new DemoqaTextBoxPage(_driver);
+
             demoqaTextBoxPage.NavigateToDefaultPage();
             demoqaTextBoxPage.InsertTextToFullNameField(fullName);
             demoqaTextBoxPage.ClickSubmitButton();

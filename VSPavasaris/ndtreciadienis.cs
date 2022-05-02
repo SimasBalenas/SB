@@ -16,7 +16,7 @@ namespace VSPavasaris
         {
             IWebDriver driver = new FirefoxDriver();
             driver.Url = "https://login.yahoo.com/";
-            driver.Quit();
+         //   driver.Quit();
         }
 
     }
