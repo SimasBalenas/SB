@@ -28,11 +28,7 @@ namespace VSPavasaris._2022_04_30
         [Test]
         public static void TestInputTest()
         {
-
-
-           
-
-
+         
             //isskleidzia langus
             IWebElement submitButton = driver.FindElement(By.CssSelector("button.rct-option:nth-child(1)"));
             submitButton.Click();
@@ -40,7 +36,6 @@ namespace VSPavasaris._2022_04_30
             // paspaudzia command
             IWebElement submitButton1 = driver.FindElement(By.CssSelector("li.rct-node-leaf:nth-child(2) > span:nth-child(1) > label:nth-child(2)"));
             submitButton1.Click();
-
         }
 
         [Test]
@@ -59,7 +54,6 @@ namespace VSPavasaris._2022_04_30
             IWebElement submitButton2 = driver.FindElement(By.CssSelector("li.rct-node-parent:nth-child(3) > span:nth-child(1) > label:nth-child(2)"));
             submitButton2.Click();
 
-        
         }
         [Test]
         public static void TestInputTest3()
@@ -74,7 +68,6 @@ namespace VSPavasaris._2022_04_30
 
             IWebElement submitButton2 = driver.FindElement(By.CssSelector("li.rct-node:nth-child(4) > span:nth-child(1) > label:nth-child(2)"));
             submitButton2.Click();
-
          
         }
     }
